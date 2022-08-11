@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="img/foto_perfil.jpg">
+        <p>Alex Rene Garcia Porras</p>
+        <br>
+    </header>
+    <div></div>
+    <div>
+        <table>
+            <tr>
+                <td colspan="2">Programacion Web</td>
+            </tr>
+            <tr>
+                <td>Asp</td>
+                <td>Jsp</td>
+            </tr>
+            <tr>
+                <td>Php</td>
+                <td>Go</td>
+            </tr>
+        </table>
+    </div>
+    <div class="estilo_bloque">
+        <form>
+            <input type="text" id="nombre" placeholder="Ingrese Nombre" >
+            <input type="text" id="txt_apellidos" placeholder="Ingrese Apellidos" ></input>
+            <input type="text" id="txt_telefono" placeholder="Ingrese Telefono" ></input>
+            <input type="text" id="txt_email" placeholder="Ingrese Email" ></input>
+            <input type="text" id="txt_fecha" placeholder="Ingrese Fecha" ></input>
+            <textarea id="txt_direccion" placeholder="Ingrese la direccion"></textarea>
+            <input type="submit" class="boton" onclick="mensaje()">
+
+        </form>
+        
+    </div>
+    <div class="estilo_bloque" id="redes_sociales">
+
+            <h3>Redes Sociales</h3>
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/twitter.png"></a>
+
+    </div>
+
+    <script>
+        
+        function mensaje(){
+        let nombres = document.getElementById("nombre").value;
+        let apellidos = document.getElementById("txt_apellidos").value;
+        let telefono = document.getElementById("txt_telefono").value;
+        let email = document.getElementById("txt_email").value;
+        let fecha = document.getElementById("txt_fecha").value;
+        let direccion = document.getElementById("txt_direccion").value;
+         alert(nombres + "," + apellidos + " , " + telefono + " , " + email + " , " + fecha + " , " + direccion);
+        }
+    
+    </script> 
+      
+</body>
+</html>
